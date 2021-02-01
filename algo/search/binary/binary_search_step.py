@@ -1,12 +1,14 @@
-def binary_serch(array, item):
+def binary_search_step(array, item):
     low = 0
     high = len(array) - 1
+    counter = 0
 
     while low <= high:
         mid = (low + high) // 2
         index = array[mid]
+        counter = counter + 1
         if index == item:
-            return mid
+            return counter
         if index > item:
             high = mid - 1
         else:

@@ -4,10 +4,10 @@ def binary_serch(array, item):
 
     while low <= high:
         mid = (low + high) // 2
-        predict = array[mid]
-        if predict == item:
+        index = array[mid]
+        if index == item:
             return mid
-        if predict > item:
+        if index > item:
             high = mid - 1
         else:
             low = mid + 1
